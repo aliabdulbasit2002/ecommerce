@@ -44,9 +44,9 @@ const Navbar = () => {
         fontSize={{ base: "2xl", md: "3xl" }}
         color={heading}
       >
-        Bin-
+        Wi
         <Text as="span" color="brand.300">
-          Ladin
+          sh
         </Text>
       </Heading>
       <Box>
