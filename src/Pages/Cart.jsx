@@ -7,7 +7,9 @@ import {
   HStack,
   Text,
   useColorModeValue,
+  Button,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { cart, total } = useSelector((state) => state.cart);
@@ -34,6 +36,9 @@ const Cart = () => {
         <Text>Total :</Text>
         <Text as="span">${total.toFixed(2)}</Text>
       </HStack>
+      <Button as={Link} to="/checkout">
+        Proceed to Payment
+      </Button>
     </Box>
   );
 };
